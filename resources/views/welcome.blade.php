@@ -81,14 +81,14 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Hele Zieke Sportapp
+                    Hele Zieke Sportapp mede mogelijk gemaakt door JepDesk
                 </div>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
+                    <a href="https://pornhub.com">Laracasts</a>
+                    <a href="https://xhamster.com">News</a>
+                    <a href="https://instagram.com/madelene_wright?igshid=1s6g9r5cpc28c">Blog</a>
                     <a href="https://nova.laravel.com">Nova</a>
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://vapor.laravel.com">Vapor</a>
