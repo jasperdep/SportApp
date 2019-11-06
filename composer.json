@@ -10,6 +10,8 @@
     "require": {
         "php": "^7.2",
         "fideloper/proxy": "^4.0",
+        "hz-hbo-ict/laravel-core-ui": "^3.4",
+        "jeroennoten/laravel-adminlte": "^3.0",
         "laravel/framework": "^6.2",
         "laravel/tinker": "^1.0"
     },
