@@ -15,4 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/api', 'GuzzleController@getRemoteData');
+Route::get('/standings', 'GuzzleController@getLeagueData');
+Route::get('/teams', 'GuzzleController@getTeamData');
