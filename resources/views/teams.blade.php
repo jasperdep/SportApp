@@ -8,6 +8,7 @@
     <title>Liverpool</title>
 </head>
 <body>
+    <div class="container">
     <h1>{{ $liverpool['name'] }}</h1>
     <table class="table">
         <thead>
@@ -41,5 +42,6 @@
             </tbody>
         @endforeach
     </table>
+    </div>
 </body>
 </html>

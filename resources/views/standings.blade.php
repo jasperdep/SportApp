@@ -8,37 +8,39 @@
     <title>Premier League Stand</title>
 </head>
 <body>
-    <table class="table">
-        <thead>
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Positie</th>
+                    <th scope="col">Team</th>
+                    <th scope="col">Gespeeld</th>
+                    <th scope="col">Winst</th>
+                    <th scope="col">Gelijk</th>
+                    <th scope="col">Verlies</th>
+                    <th scope="col">Goals Voor</th>
+                    <th scope="col">Goals Tegen</th>
+                    <th scope="col">Doelsaldo</th>
+                    <th scope="col">Punten</th>
+                </tr>
+            </thead>
+            @foreach ($pl as $league)
+            <tbody>
             <tr>
-                <th scope="col">Positie</th>
-                <th scope="col">Team</th>
-                <th scope="col">Gespeeld</th>
-                <th scope="col">Winst</th>
-                <th scope="col">Gelijk</th>
-                <th scope="col">Verlies</th>
-                <th scope="col">Goals Voor</th>
-                <th scope="col">Goals Tegen</th>
-                <th scope="col">Doelsaldo</th>
-                <th scope="col">Punten</th>
+                <td>{{ $league['position'] }}</td>
+                <td><img src="{{ $league['team']['crestUrl'] }}" alt="profile Pic" height="40" max-width="100%">{{ $league['team']['name'] }}</td>
+                <td>{{ $league['playedGames'] }}</td>
+                <td>{{ $league['won'] }}</td>
+                <td>{{ $league['draw'] }}</td>
+                <td>{{ $league['lost'] }}</td>
+                <td>{{ $league['goalsFor'] }}</td>
+                <td>{{ $league['goalsAgainst'] }}</td>
+                <td>{{ $league['goalDifference'] }}</td>
+                <td>{{ $league['points'] }}</td>
             </tr>
-        </thead>
-        @foreach ($pl as $league)
-        <tbody>
-          <tr>
-            <td>{{ $league['position'] }}</td>
-            <td>{{ $league['team']['name'] }}</td>
-            <td>{{ $league['playedGames'] }}</td>
-            <td>{{ $league['won'] }}</td>
-            <td>{{ $league['draw'] }}</td>
-            <td>{{ $league['lost'] }}</td>
-            <td>{{ $league['goalsFor'] }}</td>
-            <td>{{ $league['goalsAgainst'] }}</td>
-            <td>{{ $league['goalDifference'] }}</td>
-            <td>{{ $league['points'] }}</td>
-          </tr>
-        </tbody>
-        @endforeach
-    </table>
+            </tbody>
+            @endforeach
+        </table>
+    </div>
 </body>
 </html>
